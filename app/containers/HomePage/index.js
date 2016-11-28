@@ -12,6 +12,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import SearchContainer from '../SearchContainer';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -21,6 +22,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <FormattedMessage {...messages.header} />
       </h1>
       <h2>This is h2 tag</h2>
+      <SearchContainer />
       </div>
     );
   }

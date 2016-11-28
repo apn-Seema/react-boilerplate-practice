@@ -40,7 +40,7 @@ export default function configureStore(initialState = {}, history) {
 
   // Extensions
   store.runSaga = sagaMiddleware.run;
-  store.asyncReducers = {}; // Async reducer registry
+  store.asyncSagas= {}; // Async reducer registry
 
   // Make reducers hot reloadable, see http://mxs.is/googmo
   /* istanbul ignore next */
@@ -54,6 +54,6 @@ export default function configureStore(initialState = {}, history) {
       });
     });
   }
-
+ store.asyncReducers = {};
   return store;
 }
