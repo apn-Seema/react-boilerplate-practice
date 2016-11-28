@@ -10,9 +10,9 @@ In development Webpack compiles your application runs it in-memory. Only when
 you run `npm run build` will it write to disk and preserve your bundled
 application across computer restarts.
 
-## How do I fix `Error: listen EADDRINUSE 127.0.0.1:4000`?
+## How do I fix `Error: listen EADDRINUSE 127.0.0.1:3000`?
 
-This simply means that there's another process already listening on port 4000.
+This simply means that there's another process already listening on port 3000.
 The fix is to kill the process and rerun `npm start`.
 
 ### OS X / Linux:
@@ -25,7 +25,7 @@ The fix is to kill the process and rerun `npm start`.
     > ```Shell
     > janedoe    29811  49.1  2.1  3394936 356956 s004  S+    4:45pm   2:40.07 node server
     > ```
-    > Note: If nothing is listed, you can try `lsof -i tcp:4000` 
+    > Note: If nothing is listed, you can try `lsof -i tcp:3000` 
 
 1. Then run
     ```Shell
@@ -47,7 +47,7 @@ The fix is to kill the process and rerun `npm start`.
     > Proto     Local Address     Foreign Address   State       PID
     > TCP       0.0.0.0:25        0.0.0.0:0         Listening   4196
     > ...
-    > TCP       0.0.0.0:4000      0.0.0.0:0         Listening   28344
+    > TCP       0.0.0.0:3000      0.0.0.0:0         Listening   28344
     ```
 
 1. Then run
@@ -83,7 +83,7 @@ output.publicPath in webpack.dev.babel.js, with protocol.
 // webpack.dev.babel.js
 
 output: {
-  publicPath: 'http://127.0.0.1:4000/',
+  publicPath: 'http://127.0.0.1:3000/',
   /* … */
 },
 ```
@@ -165,7 +165,7 @@ WebStorm is a powerful IDE, and why not also use it as debugger tool? Here is th
 9.  Edit Run Configuration Again
 10.  Mapping Url as below picture
     * Map your `root` directory with `webpack://.` (please note the last dot)
-    * Map your `build` directory with your root path (e.g. `http://localhost:4000`)
+    * Map your `build` directory with your root path (e.g. `http://localhost:3000`)
 11.  Hit OK and restart debugging session
 
 ![How to debug using WebStorm](webstorm-debug.png)

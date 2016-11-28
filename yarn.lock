@@ -260,7 +260,7 @@ autoprefixer@^6.0.0, autoprefixer@^6.0.2, autoprefixer@^6.3.1:
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.5.0.tgz#910de0aa0f22af4c7d50367cbc9d4d412945162f"
   dependencies:
     browserslist "~1.4.0"
-    caniuse-db "^1.0.40000540"
+    caniuse-db "^1.0.30000540"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^5.2.2"
@@ -1365,7 +1365,7 @@ browserslist@^1.0.0, browserslist@^1.0.1, browserslist@^1.1.1, browserslist@^1.1
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.4.0.tgz#9cfdcf5384d9158f5b70da2aa00b30e8ff019049"
   dependencies:
-    caniuse-db "^1.0.40000539"
+    caniuse-db "^1.0.30000539"
 
 buffer-crc32@~0.2.3:
   version "0.2.5"
@@ -1475,14 +1475,14 @@ caniuse-api@^1.3.2:
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-1.5.2.tgz#8f393c682f661c0a997b77bba6e826483fb3600e"
   dependencies:
     browserslist "^1.0.1"
-    caniuse-db "^1.0.40000346"
+    caniuse-db "^1.0.30000346"
     lodash.memoize "^4.1.0"
     lodash.uniq "^4.3.0"
     shelljs "^0.7.0"
 
-caniuse-db@^1.0.40000187, caniuse-db@^1.0.40000346, caniuse-db@^1.0.40000539, caniuse-db@^1.0.40000540:
-  version "1.0.40000554"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.40000554.tgz#cd1dbe423d00b6203ba93f05973a476428dec919"
+caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000346, caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000540:
+  version "1.0.30000554"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000554.tgz#cd1dbe423d00b6203ba93f05973a476428dec919"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -2494,7 +2494,7 @@ doiuse@^2.4.1:
   resolved "https://registry.yarnpkg.com/doiuse/-/doiuse-2.5.0.tgz#c7f156965d054bf4d699a4067af1cadbc7350b7c"
   dependencies:
     browserslist "^1.1.1"
-    caniuse-db "^1.0.40000187"
+    caniuse-db "^1.0.30000187"
     css-rule-stream "^1.1.0"
     duplexer2 "0.0.2"
     jsonfilter "^1.1.2"
@@ -3343,7 +3343,7 @@ filename-reserved-regex@^1.0.0:
 
 filenamify@^1.0.1:
   version "1.2.1"
-  resolved "https://registry.yarnpkg.com/filenamify/-/filenamify-1.2.1.tgz#a9f2ffd11c503bed400015029272378f1f1365a5"
+  resolved "https://registry.yarnpkg.com/filenamify/-/filenamify-1.2.1.tgz#a9f2ffd11c503bed300015029272378f1f1365a5"
   dependencies:
     filename-reserved-regex "^1.0.0"
     strip-outer "^1.0.0"
