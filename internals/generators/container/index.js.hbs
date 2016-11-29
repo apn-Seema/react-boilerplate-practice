@@ -20,7 +20,7 @@ import messages from './messages';
 import styles from './styles.css';
 {{/if}}
 
-export class {{ properCase name }} extends React.{{{ component }}} { // eslint-disable-line react/prefer-stateless-function
+export class {{ properCase name }} extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       {{#if wantCSS}}
@@ -29,12 +29,12 @@ export class {{ properCase name }} extends React.{{{ component }}} { // eslint-d
       <div>
       {{/if}}
       {{#if wantHeaders}}
-        <Helmet
-          title="{{properCase name}}"
-          meta={{curly true}}[
-            {{curly true}} name: 'description', content: 'Description of {{properCase name}}' {{curly}},
-          ]{{curly}}
-        />
+      <Helmet
+        title="{{properCase name}}"
+        meta={{curly true}}[
+          {{curly true}} name: 'description', content: 'Description of {{properCase name}}' {{curly}},
+        ]{{curly}}
+      />
       {{/if}}
       {{#if wantMessages}}
         <FormattedMessage {...messages.header} />
@@ -57,5 +57,5 @@ function mapDispatchToProps(dispatch) {
 {{#if wantActionsAndReducer}}
 export default connect(mapStateToProps, mapDispatchToProps)({{ properCase name }});
 {{else}}
-export default connect(null, mapDispatchToProps)({{ properCase name }});
+export default connect(mapDispatchToProps)({{ properCase name }});
 {{/if}}

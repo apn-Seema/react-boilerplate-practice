@@ -5,25 +5,25 @@
  *
  * NOTE: while this component should technically be a stateless functional
  * component (SFC), hot reloading does not currently support SFCs. If hot
- * reloading is not a necessity for you then you can refactor it and remove
+ * reloading is not a neccessity for you then you can refactor it and remove
  * the linting exception.
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
-import SearchContainer from '../SearchContainer';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-  render() {
-    return (
-      <div>
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
-      <h2>This is h2 tag</h2>
-      <SearchContainer />
-      </div>
-    );
-  }
+import NavigationContainer from '../../containers/NavigationContainer';
+
+export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+	static propTypes = {
+		children: React.PropTypes.element
+	}
+
+	render() {
+		return (
+			<div>
+				<NavigationContainer />
+				{this.props.children}
+			</div>
+		);
+	}
 }
